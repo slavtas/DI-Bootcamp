@@ -1,81 +1,134 @@
-#DATA_STRUCTURES
+# DATA STRUCTURES:
+# sequences = string
+# data structure sequence: list
+# sets
+# tuples
 
-# first_name = 'Slava'
-# last_name = 'Boytsun'
-# nickname = 'slavtas'
+# my_name = 'Juliana'
+# last_name = "Schmidt"
+# nickname = 'ju05'
 
-# user_info = [first_name,last_name,user_name]
-# user_name = list(first_name)
+# # # two options to create a list
+# user_info = [my_name,last_name,nickname] # wrap with square brackets []
+# user_name = list(my_name)# use built-in method list()
+
+# option1 = ['Juliana']
+# option2 = list('Juliana')
+
+# print('option 1', option1)
+# print('option 2', option2)
 
 # print(user_info)
 # print(user_name)
 
-# option1 = ['Slava']
-# option2 = list('Slava')
 
-# print('option1', option1)
-# print('option2', option2)
+# nums_list = [1,2,4,7,2,8,12]
 
-# Methods for lists
-nums_list = [1,6,2,3,7,8,2,12]
+#list indexing
+# print(nums_list[4:])
+# print(nums_list[3])
 
-nums_list.append(120)
-print(nums_list)
+#methods for list
+# nums_list.append(120)
+# print(nums_list)
 
-nums_list.insert(2,55)
-print(nums_list)
+# nums_list.insert(2,55)  #insert(index,element)
+# print(nums_list)
 
-nums_list.remove(2)
-print(nums_list)
+# nums_list.remove(2)#remove(element)
+# print(nums_list)
 
-del nums_list[3]
-print(nums_list)
+# del nums_list[3] #how to delete an index
+# print(nums_list)
 
-# nums_list.pop(3)
-print(nums_list)
-
-# deleted_el = nums_list.pop(3)
+# # nums_list.pop() #default: deletes the last element
+# deleted_el = nums_list.pop(3) #pop(index): delete the element in this index and save what was deleted
 # print(deleted_el)
 
-print(nums_list[4:])
+# print(nums_list.index(4)) #index(element)
+# nums_list[2] = 40
+# print(nums_list)
 
-#tuples unedditable sequence
 
-some_tupple = tuple()
-scores = (10,45,33,67)
-print(scores)
-#to edit
-scores_list = list(scores)
-scores_list.append(120)
-updated_tupple = tuple(scores_list)
-print(updated_tupple)
-#unpack tupple
-score1, score2, score3, score4 = scores
-print(score1)
-print(score2)
-print(score3)
+# # ex1
+# list1 = [5, 10, 15, 20, 25, 50, 20]
 
-print(scores[-1])
+# if list1.index(20):
+#    list1[list1.index(20)] = 200
+# else: print('number not founded')
 
-#sets unordered with no multiple occurences
+# print(list1)
 
-my_set = {'Slava'}
+#tuples: unmutable sequence
+
+# some_tupple = tuple()
+# scores = (10,45,33,67)
+
+# #unpack a tuple
+# score1, score2, score3, score4 = scores
+
+# print(score1)
+# print(score2)
+# print(score3)
+
+# #indexing tuples
+# print(scores[-1])
+
+#how to work around to change a tuple:
+
+#convert the tuple to a list
+# scores_list = list(scores)
+# scores_list.append(120)
+
+# #convert the list back to a tuple
+# updated_tuple = tuple(scores_list)
+# print(updated_tuple)
+
+# print(type(updated_tuple))
+
+#SETS: Unordered and doesn't accept multiple occurences
+
+# my_set = {''}
 # my_set = set()
 
-my_set.add('Rick')
-my_set.add('Morty')
-my_set.add('Rick')
+# my_set.add('Rick')
+# my_set.add('Morty')
+# my_set.add('Rick')
 
-set2 = {'Harry','Ron','Morty'}
-set3 = my_set.intersection(set2)
-print(set3)
+# #{'Rick', 'Morty'}
 
-set4 = my_set.union(set2)
-print(set4)
+# set2 = {'Harry','Ron','morty'}
 
-names = ['Leah','Luke','Chubaca','Harry','Harry']
-names_set = set(names)
-print(names_set)
+# set3 = my_set.intersection(set2)
+# print(set3)
 
-names = list(names_set)
-print(names)
+# set4 = my_set.union(set2)
+# print(set4)
+
+# names = ['Leah', 'Luke', 'Chubaca', 'Harry', 'Harry']
+
+# names_set = set(names)
+# print(names_set)
+
+# names = list(names_set)
+# print(names)
+
+# fruits = ['lime', 'apple', 'banana']
+
+# # fruits2 = fruits.copy()
+# fruits2 = fruits
+
+
+# print(fruits)
+# print(fruits2)
+# fruits2.append('kiwi')
+# print(fruits)
+# print(fruits2)
+
+
+
+
+
+
+
+

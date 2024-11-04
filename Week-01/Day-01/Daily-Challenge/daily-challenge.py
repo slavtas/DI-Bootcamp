@@ -12,8 +12,8 @@ else:
 
 
 import random
-user_input = list('HelloWorld')
-print(user_input)
-random.shuffle(user_input)
-print(user_input)
-print(''.join(user_input))
+user_string = list('HelloWorld')
+print(user_string)
+random.shuffle(user_string)
+print(user_string)
+print(''.join(user_string))
