@@ -48,6 +48,7 @@ print(basket)
 
 # Exercise_4 Floats
 # integers are whole numbers, floats are numbers with decimal places
+
 float_sequence = [round(1.5 + 0.5 * i, 1) for i in range(8)]
 print(float_sequence)
 
@@ -111,9 +112,10 @@ print(f'Total price: {total_price:.2f} USD')
 total_cost = 0
 
 family_size = int(input('How many people in the family need tickets? '))
+print(family_size)
 
 for i in range(family_size):
-    age = int(input(f'Enter the age of person {i+1}: '))
+    age = int(input(f'Enter the age of person {i+1}: ')) # based on the family size {i+1}} will assign numbers starting with '1', found by trial and error
     
     
     if age < 3:
