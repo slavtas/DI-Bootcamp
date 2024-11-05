@@ -1,61 +1,61 @@
 #Exercise_1 Convert lists into dictionaries via zip
 
-# keys = ['ten', 'twenty', 'thirty']
-# values = [10, 20, 30]
+keys = ['ten', 'twenty', 'thirty']
+values = [10, 20, 30]
 
-# print(dict(zip(keys, values)))
+print(dict(zip(keys, values)))
 
 #Exercise_2 Cinemax v2.0
 
-# member = ['rick', 'beth', 'morty', 'summer']
-# ages = [43, 13, 5, 8]
+member = ['rick', 'beth', 'morty', 'summer']
+ages = [43, 13, 5, 8]
 
-# family = dict(zip(member, ages))
+family = dict(zip(member, ages))
 
-# print(family)
+print(family)
 
-# total_cost = 0
+total_cost = 0
 
-# for member, age in family.items():
-#     if age < 3:
-#         cost = 0
-#     elif 3 <= age <= 12:
-#         cost = 10
-#     else:
-#         cost = 15
+for member, age in family.items():
+    if age < 3:
+        cost = 0
+    elif 3 <= age <= 12:
+        cost = 10
+    else:
+        cost = 15
     
-#     total_cost += cost
-#     print(f'{member}: ${cost}')
+    total_cost += cost
+    print(f'{member}: ${cost}')
 
-# print(f'Total cost for family: ${total_cost}')
+print(f'Total cost for family: ${total_cost}')
 
 # Bonus portion
 
-# family_dict = {}
+family_dict = {}
 
-# while True:
-#     name = input('Enter family member, press "done" when finished: ')
-#     if name == 'done':
-#         break
-#     age = int(input(f'Enter {name}\'s age: '))
-#     family_dict[name] = age
+while True:
+    name = input('Enter family member, press "done" when finished: ')
+    if name == 'done':
+        break
+    age = int(input(f'Enter {name}\'s age: '))
+    family_dict[name] = age
 
-# print("\nFamily:", family_dict)
+print("\nFamily:", family_dict)
 
-# total_cost = 0
+total_cost = 0
 
-# for member, age in family_dict.items():
-#     if age < 3:
-#         cost = 0
-#     elif 3 <= age <= 12:
-#         cost = 10
-#     else:
-#         cost = 15
+for member, age in family_dict.items():
+    if age < 3:
+        cost = 0
+    elif 3 <= age <= 12:
+        cost = 10
+    else:
+        cost = 15
     
-#     total_cost += cost
-#     print(f'{member}: {cost}')
+    total_cost += cost
+    print(f'{member}: {cost}')
 
-# print(f'Total cost for family: {total_cost}')
+print(f'Total cost for family: {total_cost}')
 
 # Exercise_3 Zara Paradox
 
@@ -72,40 +72,40 @@ brand = {
         'US': ['pink', 'green']
         }
     }
-# print(brand)
+print(brand)
 
-# brand['number_stores'] = 2 # changed number of stores to "2"
-# print(brand)
+brand['number_stores'] = 2 # changed number of stores to "2"
+print(brand)
 
-# print('Zara\'s clients are ', ', '.join(brand['type_of_clothes'])) #how to remove [] join()
-# # print(" ,".join(brand['type_of_clothes']))
-# brand['country_creation'] = 'Spain'
-# print(brand)
+print('Zara\'s clients are ', ', '.join(brand['type_of_clothes'])) #how to remove [] join()
+# print(" ,".join(brand['type_of_clothes']))
+brand['country_creation'] = 'Spain'
+print(brand)
 
-# if 'international_competitors' in brand:
-#     brand['international_competitors'].append('Desigual')
-# print(brand)
+if 'international_competitors' in brand:
+    brand['international_competitors'].append('Desigual')
+print(brand)
 
-# del brand['creation_date']
-# print(brand)
+del brand['creation_date']
+print(brand)
 
-# brand['international_competitors'].pop(-1)
-# print(brand)
+brand['international_competitors'].pop(-1)
+print(brand)
 
-# print('Major colors in US are ',', '.join(brand['major_color']['US'])) #how to remove []
+print('Major colors in US are ',', '.join(brand['major_color']['US'])) #how to remove []
 
-# print('Amount of key value pairs are ', len(brand))
+print('Amount of key value pairs are ', len(brand))
 
-# print('Keys of the dictionary are ',', '.join(brand.keys()))
+print('Keys of the dictionary are ',', '.join(brand.keys()))
 
-# more_on_zara = {
-#     'creation_date': 1975,
-#     'number_stores': 10000
-# }
-# brand.update(more_on_zara) # "number_stores" was updated from 7000 to 10000, "creation_date" was added to the end of the dictionary since it was deleted previously
-# print(brand)
+more_on_zara = {
+    'creation_date': 1975,
+    'number_stores': 10000
+}
+brand.update(more_on_zara) # "number_stores" was updated from 7000 to 10000, "creation_date" was added to the end of the dictionary since it was deleted previously
+print(brand)
 
-# print(brand['number_stores']) #now it's 10000
+print(brand['number_stores']) #now it's 10000
 
 # Exercise_4 Disney Characters
 
