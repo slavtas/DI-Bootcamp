@@ -1,22 +1,22 @@
-# Challenge_1 Ask for a word, create dict, store indexes for each letter in a list
-words_letter_indexes = {}
+# # Challenge_1 Ask for a word, create dict, store indexes for each letter in a list
+# words_letter_indexes = {}
 
-while True:
-    word = input('Type a word, enter "done" when finished: ')
-    if word == "done":
-        break
-    letter_indexes = {}
-    for index, letter in enumerate(word):
-        if letter in letter_indexes:
-            letter_indexes[letter].append(index)
-        else:
-            letter_indexes[letter] = [index]
-    words_letter_indexes[word] = letter_indexes
+# while True:
+#     word = input('Type a word, enter "done" when finished: ')
+#     if word == "done":
+#         break
+#     letter_indexes = {}
+#     for index, letter in enumerate(word):
+#         if letter in letter_indexes:
+#             letter_indexes[letter].append(index)
+#         else:
+#             letter_indexes[letter] = [index]
+#     words_letter_indexes[word] = letter_indexes
 
-print('Here is what you get: ', words_letter_indexes)
-print("Now, let's make it look nice:")
-for word, indexes in words_letter_indexes.items():
-    print(f'{word} {indexes}')
+# print('Here is what you get: ', words_letter_indexes)
+# print("Now, let's make it look nice:")
+# for word, indexes in words_letter_indexes.items():
+#     print(f'{word} {indexes}')
 
 #Challenge_2 Gone shopping
 
