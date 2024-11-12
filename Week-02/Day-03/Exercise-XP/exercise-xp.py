@@ -101,23 +101,23 @@ minutes_lived(birthdate)
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Exercise_7 Faker
-import faker
+# import faker
 
-fake = faker()
+# fake = faker()
 
-users = []
+# users = []
 
-def add_user():
-    user = {
-        "name": fake.name(),
-        "address": fake.address(),
-        "language_code": fake.language_code()
-    }
-    users.append(user)
+# def add_user():
+#     user = {
+#         "name": fake.name(),
+#         "address": fake.address(),
+#         "language_code": fake.language_code()
+#     }
+#     users.append(user)
 
-for _ in range(5):
-    add_user()
+# for _ in range(5):
+#     add_user()
 
-for user in users:
-    print(user)
+# for user in users:
+#     print(user)
 
