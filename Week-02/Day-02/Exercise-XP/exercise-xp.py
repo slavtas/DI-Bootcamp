@@ -170,52 +170,52 @@
 # === * === * === * === * === * === * === * === * === * === * === * === * ===
 
 # Exercise_5
-class Family:
-    def __init__(self, last_name, members=None):
-        self.last_name = last_name
-        self.members = members if members else []
+# class Family:
+#     def __init__(self, last_name, members=None):
+#         self.last_name = last_name
+#         self.members = members if members else []
 
-    def born(self, **kwargs):
-        self.members.append(kwargs)
-        print(f"Congratulations to the {self.last_name} family on the birth of {kwargs.get('name')}!")
+#     def born(self, **kwargs):
+#         self.members.append(kwargs)
+#         print(f"Congratulations to the {self.last_name} family on the birth of {kwargs.get('name')}!")
 
-    def is_18(self, name):
-        for member in self.members:
-            if member['name'] == name:
-                return member['age'] >= 18
-        raise ValueError(f"{name} is not in the family.")
+#     def is_18(self, name):
+#         for member in self.members:
+#             if member['name'] == name:
+#                 return member['age'] >= 18
+#         raise ValueError(f"{name} is not in the family.")
 
-    def family_presentation(self):
-        print(f"The {self.last_name} Family:")
-        for member in self.members:
-            print(f"Name: {member['name']}, Age: {member['age']}, Gender: {member['gender']}, Is Child: {member['is_child']}")
+#     def family_presentation(self):
+#         print(f"The {self.last_name} Family:")
+#         for member in self.members:
+#             print(f"Name: {member['name']}, Age: {member['age']}, Gender: {member['gender']}, Is Child: {member['is_child']}")
 
-class TheIncredibles(Family):
-    def use_power(self, name):
-        for member in self.members:
-            if member['name'] == name:
-                if member['age'] >= 18:
-                    print(f"{member['incredible_name']} uses their power: {member['power']}!")
-                else:
-                    raise Exception(f"{member['name']} is not over 18 years old and cannot use their power.")
-        else:
-            raise ValueError(f"{name} is not in the family.")
+# class TheIncredibles(Family):
+#     def use_power(self, name):
+#         for member in self.members:
+#             if member['name'] == name:
+#                 if member['age'] >= 18:
+#                     print(f"{member['incredible_name']} uses their power: {member['power']}!")
+#                 else:
+#                     raise Exception(f"{member['name']} is not over 18 years old and cannot use their power.")
+#         else:
+#             raise ValueError(f"{name} is not in the family.")
 
-    def incredible_presentation(self):
-        print("*Here is our powerful family!*")
-        super().family_presentation()
-        for member in self.members:
-            print(f"Incredible Name: {member['incredible_name']}, Power: {member['power']}")
+#     def incredible_presentation(self):
+#         print("*Here is our powerful family!*")
+#         super().family_presentation()
+#         for member in self.members:
+#             print(f"Incredible Name: {member['incredible_name']}, Power: {member['power']}")
 
-incredible_members = [
-    {'name': 'Robert', 'age': 39, 'gender': 'Male', 'is_child': False, 'power': 'super strength', 'incredible_name': 'Mr. Incredible'},
-    {'name': 'Helen', 'age': 36, 'gender': 'Female', 'is_child': False, 'power': 'stretching', 'incredible_name': 'Elastigirl'}
-]
+# incredible_members = [
+#     {'name': 'Robert', 'age': 39, 'gender': 'Male', 'is_child': False, 'power': 'super strength', 'incredible_name': 'Mr. Incredible'},
+#     {'name': 'Helen', 'age': 36, 'gender': 'Female', 'is_child': False, 'power': 'stretching', 'incredible_name': 'Elastigirl'}
+# ]
 
-incredibles_family = TheIncredibles(last_name="Incredibles", members=incredible_members)
+# incredibles_family = TheIncredibles(last_name="Incredibles", members=incredible_members)
 
-incredibles_family.incredible_presentation()
+# incredibles_family.incredible_presentation()
 
-incredibles_family.born(name='Jack-Jack', age=0, gender='Male', is_child=True, power='Unknown Power', incredible_name='BabyJack')
+# incredibles_family.born(name='Jack-Jack', age=0, gender='Male', is_child=True, power='Unknown Power', incredible_name='BabyJack')
 
-incredibles_family.incredible_presentation()
+# incredibles_family.incredible_presentation()
