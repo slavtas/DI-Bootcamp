@@ -190,7 +190,6 @@ class Family:
         for member in self.members:
             print(f"Name: {member['name']}, Age: {member['age']}, Gender: {member['gender']}, Is Child: {member['is_child']}")
 
-
 class TheIncredibles(Family):
     def use_power(self, name):
         for member in self.members:
