@@ -400,3 +400,5 @@
 # # Print the countdown
 # print(f"My birthday is in {days} days, and {hours:02}:{minutes:02}:{seconds:02}")
 
+import random
+print(random.randint(15, 99))
