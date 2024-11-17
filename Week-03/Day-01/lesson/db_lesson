@@ -1,0 +1,85 @@
+A relational database organizes data into tables with rows and columns, making it easy to manage and relate data. SQL (Structured Query Language) is the language used to interact with these databases, allowing you to store, retrieve, update, and delete data efficiently. For example, you can use SQL to find specific records, add new data, or modify existing information.
+
+PostgreSQL is a powerful, open-source relational database management system. It supports advanced features like custom data types, full-text search, and geospatial data, making it ideal for web applications, data analysis, and large-scale systems. It’s highly extensible, free to use, and compatible with many programming languages and tools. Together, these technologies provide a robust way to store and manage structured data.
+
+In SQL, NULL represents a missing, undefined, or unknown value in a database table. It is used when a value for a particular column is not available or hasn't been provided.
+
+Databases support various data types to define the kind of data stored in each column of a table. These types vary slightly between database systems (like MySQL, PostgreSQL, or SQL Server), but the general categories are as follows:
+------------------------------------------------------------------------------------------------------
+In summary, databases support various data types to handle numbers, text, dates, binary data, and more, depending on the specific requirements of the application.
+
+1. Numeric Types:
+Used for numbers, including integers and decimals.
+
+Integer Types:
+
+INT or INTEGER: Whole numbers (e.g., 42).
+SMALLINT, TINYINT, BIGINT: Smaller or larger ranges of integers.
+Floating-Point Types:
+
+FLOAT, REAL, DOUBLE: Numbers with decimal points (e.g., 3.14).
+DECIMAL or NUMERIC: Fixed-point precision for exact decimals (e.g., 123.45), often used for currency.
+2. String/Text Types:
+Used for storing text.
+
+Character Types:
+CHAR(n): Fixed-length strings (e.g., CHAR(5) reserves 5 characters).
+VARCHAR(n) or TEXT: Variable-length strings (e.g., names or descriptions).
+Large Text:
+TEXT or CLOB: For very large amounts of text.
+3. Date and Time Types:
+Used to store dates, times, or both.
+
+DATE: Stores only the date (e.g., 2024-11-17).
+TIME: Stores only the time (e.g., 14:30:00).
+DATETIME or TIMESTAMP: Stores both date and time (e.g., 2024-11-17 14:30:00).
+INTERVAL: For time intervals (e.g., +3 days).
+4. Boolean Type:
+Used for true/false values.
+
+BOOLEAN: Stores TRUE, FALSE, or sometimes NULL (unknown).
+5. Binary Types:
+Used for storing binary data like images, videos, or files.
+
+BLOB (Binary Large Object): For binary data (e.g., images or audio files).
+VARBINARY(n): Variable-length binary data.
+6. JSON and Array Types:
+Used in modern databases to store complex data.
+
+JSON: For storing structured data in JSON format.
+ARRAY: For storing arrays of values (e.g., [1, 2, 3]).
+7. Special Types:
+These are specific to certain databases.
+
+Geospatial Types:
+
+GEOMETRY, POINT, POLYGON: Used for spatial data like maps.
+UUID:
+
+For universally unique identifiers (e.g., 550e8400-e29b-41d4-a716-446655440000).
+XML:
+
+For XML-structured data.
+
+------------------------------------------------------------------------------------------------------
+
+In databases, constraints are rules applied to table columns to ensure data integrity, consistency, and validity. They restrict the type of data that can be stored and enforce relationships between tables.
+
+Key types of constraints include:
+
+Primary Key: Ensures each row is uniquely identifiable and prevents NULL or duplicate values. (NULL + UNIQUE)
+
+Foreign Key: Maintains relationships between tables by linking one column to another table's primary key.
+
+Unique: Guarantees all values in a column are distinct.
+
+Not Null: Prohibits NULL values in a column.
+
+Check: Validates that data meets specified conditions.
+
+Default: Assigns a default value to a column if no value is provided.
+
+Constraints are crucial for maintaining data accuracy, preventing errors, and defining table relationships.
+
+------------------------------------------------------------------------------------------------------
+
