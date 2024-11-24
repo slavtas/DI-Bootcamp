@@ -81,5 +81,4 @@ Default: Assigns a default value to a column if no value is provided.
 
 Constraints are crucial for maintaining data accuracy, preventing errors, and defining table relationships.
 
-------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------------------
