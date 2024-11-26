@@ -45,3 +45,20 @@ console.log(people.indexOf("Foo"));
 // 7. Create a variable `last` to get the last element of the array
 const last = people[people.length - 1];
 console.log(last);
+
+// Part II - Loops
+// Using a loop, iterate through the people array and console.log each person.
+// Using a loop, iterate through the people array and exit the loop after you console.log “Devon” .
+// Hint: take a look at the break statement in the lesson.
+
+// 1. Iterate through the array and console.log each person
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i]);
+  }
+// 2. Iterate through the array and exit the loop after logging “Devon”
+  for (let i = 0; i < people.length; i++) {
+    console.log(people[i]);
+    if (people[i] === "Devon") {
+      break; // Exit the loop after logging "Devon"
+    }
+  }
