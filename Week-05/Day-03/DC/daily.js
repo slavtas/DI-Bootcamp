@@ -42,3 +42,5 @@ const videoData = [
 const loopThru = videoData.map(video => new Video(video.title, video.uploader, video.time));
 
 loopThru.forEach(video => video.watch());
+
+console.log(loopThru)
