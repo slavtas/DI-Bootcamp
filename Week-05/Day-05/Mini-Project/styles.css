@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: rgb(42, 82, 152, 0.5);
+  background-color: rgba(97, 136, 202, 0.5);
   background-image: url(circuit-pattern.png);
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: rgba(173, 216, 230, 0.8);
+  background-color: rgba(8, 237, 157, 0.8);
   background-image: url(gear-pattern.png);
   padding: 20px;
 }
